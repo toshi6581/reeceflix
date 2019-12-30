@@ -1,16 +1,10 @@
 <?php
+require_once ("includes/classes/FormSanitizer.php");
+
   if(isset($_POST["submitButton"])){
 
-    $firstName = sanitizeFormString($_POST["firstName"]);
+    $firstName = FormSanitizer::sanitizeFormString($_POST["firstName"]);
 
-  }
-
-  function sanitizeFormString($inputText){
-    $inputText = strip_tags($inputText);
-    $inputText = srt_replace(" ", "", $inputText);
-    $inputText = strtolower($inputText);
-    $inputText = ucfirst($inputText);
-    return $inputText;
   }
 ?>
 
