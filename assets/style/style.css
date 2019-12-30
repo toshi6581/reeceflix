@@ -69,3 +69,7 @@ body{
 .column .header span{
     font-size: 14px;
 }
+
+.column .header img{
+    width: 100px;
+}
