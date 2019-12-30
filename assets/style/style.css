@@ -8,6 +8,7 @@ body{
 *{
     font-family: Arial, Helvetica, sans-serif;
     color: #333;
+    box-sizing: border-box;
 }
 
 .signInContainer{
@@ -25,11 +26,13 @@ body{
     width: 450px;
     box-shadow: rgba(0,0,0, 0.1) 0 1px 2px;
     padding: 20px 35px;
+    overflow-y:auto;
 }
 
 .column form{
     display: flex;
     flex-direction: column;
+    padding-top: 24px;
 }
 
 .column form input[type="text"],
@@ -72,4 +75,9 @@ body{
 
 .column .header img{
     width: 100px;
+}
+
+.signInMessage{
+    font-size: 14px;
+    font-weight: 400;
 }
